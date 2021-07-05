@@ -15,6 +15,10 @@
   color: $red;
 }
 
+.hero__container-description {
+  max-width: 500px;
+}
+
 .hero__container-description,
 .hero__container-title {
   margin-top: 20px;
@@ -48,11 +52,12 @@
   color: white;
 
   transition: all 0.3s ease-in-out;
+
+  &:hover {
+    transform: scale(1.1);
+  }
 }
 
-.hero__container-button:hover {
-  transform: scale(1.1);
-}
 
 @media only screen and (max-width: 480px) {
   .hero__container-name,
