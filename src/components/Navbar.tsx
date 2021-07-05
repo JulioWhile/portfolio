@@ -1,5 +1,24 @@
 import { useState } from "react";
 
+const links = [
+  {
+    name: "About",
+    path: "/about",
+  },
+  {
+    name: "Experience",
+    path: "/experience",
+  },
+  {
+    name: "Work",
+    path: "/work",
+  },
+  {
+    name: "Contact Me",
+    path: "/contact",
+  },
+];
+
 export function Navbar() {
   const [hamburger, setHamburger] = useState(false);
   const [navbarMenu, setNavbarMenu] = useState(false);
@@ -9,27 +28,8 @@ export function Navbar() {
     setNavbarMenu(!navbarMenu);
   };
 
-  const links = [
-    {
-      name: "About",
-      path: "/about",
-    },
-    {
-      name: "Experience",
-      path: "/experience",
-    },
-    {
-      name: "Work",
-      path: "/work",
-    },
-    {
-      name: "Contact Me",
-      path: "/contact",
-    },
-  ];
-
   const printLinks = links.map((link) => (
-    <li className="navbar__list-item">
+    <li className="navbar__list-item" key={link.name}>
       <a href={link.path}>{link.name}</a>
     </li>
   ));

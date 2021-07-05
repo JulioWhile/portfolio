@@ -1,0 +1,66 @@
+.hero {
+  height: 100vh;
+  padding-bottom: 15vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.hero__container {
+  margin: 5px 10px;
+}
+
+.hero__container-name {
+  color: $red;
+}
+
+.hero__container-description,
+.hero__container-title {
+  margin-top: 20px;
+}
+
+.hero__container-name,
+.hero__container-profession {
+  font-size: 56px;
+}
+
+.hero__container-title,
+.hero__container-profession,
+.hero__container-description {
+  color: $gray;
+}
+
+.hero__container-name,
+.hero__container-title,
+.hero__container-description {
+  text-align: justify;
+}
+
+.hero__container-button {
+  background-color: $red;
+  border: 1px solid darken($red, 5%);
+  border-radius: 3px;
+  padding: 1.25rem 1.75rem;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 35px;
+  color: white;
+
+  transition: all 0.3s ease-in-out;
+}
+
+.hero__container-button:hover {
+  transform: scale(1.1);
+}
+
+@media only screen and (max-width: 480px) {
+  .hero__container-name,
+  .hero__container-profession {
+    font-size: 38px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+
+}

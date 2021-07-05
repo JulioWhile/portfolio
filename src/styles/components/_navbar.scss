@@ -23,23 +23,23 @@
 }
 
 .navbar__list-item:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 
 .navbar__list-item a {
   text-decoration: none;
   font-size: 1rem;
   font-weight: 400;
-  color: #475569;
+  color: $gray;
 }
 
 .navbar__list-item a:hover {
-  color: $dodger-blue;
+  color: $red;
 }
 
 .navbar__brand-name {
   font-weight: 500;
-  color: $dodger-blue;
+  color: $dark;
 }
 
 @media only screen and (max-width: 768px) {
@@ -48,7 +48,7 @@
     left: -100%;
     top: 5rem;
     flex-direction: column;
-    background-color: #fff;
+    background-color: $white;
     width: 100%;
     border-radius: 10px;
     text-align: center;
@@ -93,5 +93,5 @@
   margin: 5px auto;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-  background-color: #101010;
+  background-color: $dark;
 }
